@@ -1,3 +1,3 @@
 $(function () {
-    $("#navigation_placeholder").load("nav.html");
-  });
+  $("#navigation_placeholder").load("nav.html");
+});

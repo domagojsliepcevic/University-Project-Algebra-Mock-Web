@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Početna stranica-Algebra</title>
     <meta charset="UTF-8" />
@@ -7,75 +8,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Home page" />
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400"
-          rel="stylesheet"
-          type="text/css" />
-    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/footer.css" />
 
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/fa15108486.js"
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+        integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fa15108486.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="buttonDiv">
         <button id="openToggle" onclick="SwitchButtons('openToggle');"><i class="fa-solid fa-bars"></i></button>
-        <button id="closeToggle"onclick="SwitchButtons('closeToggle');" style='display:none;'><i class="fa-solid fa-xmark"></i></button>
+        <button id="closeToggle" onclick="SwitchButtons('closeToggle');" style='display:none;'><i
+                class="fa-solid fa-xmark"></i></button>
     </div>
 
     <div id="navigationDiv">
         <nav id="navigation_placeholder">
-            </nav>
-        </div>
-        <script src="js/nav.js"></script>
+        </nav>
+    </div>
+    <script src="js/nav.js"></script>
 
-        <div id="videoDiv">
-            <video autoplay muted loop id="video">
-                <source src="video/typingOnlaptop.mp4" type="video/mp4" />
-            </video>
-            <div id="frntTextVid"
-                 style="position: absolute; top: 40%; right: 40%; bottom: 40%">
-                <p>
-                    Budi izvrstan u onome što
-                    <span class="txt-rotate"
-                          data-period="2000"
-                          data-rotate='[ "vidiš!", "voliš." ]'></span>
-                </p>
-            </div>
+    <div id="videoDiv">
+        <video autoplay muted loop id="video">
+            <source src="video/typingOnlaptop.mp4" type="video/mp4" />
+        </video>
+        <div id="frntTextVid" style="position: absolute; top: 40%; right: 40%; bottom: 40%">
+            <p>
+                Budi izvrstan u onome što
+                <span class="txt-rotate" data-period="2000" data-rotate='[ "vidiš!", "voliš." ]'></span>
+            </p>
         </div>
+    </div>
 
-        <div class="contact-form">
-            <div class="form-content">
-                <h1><i class="fas fa-envelope"></i>Kontaktirajte nas</h1>
-                <form action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post">
-                    <label for="name">Puno ime:</label>
-                    <input type="text" name="name" id="name">
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email">
-                    <label for="importance">Važnost poruke:</label>
-                    <select name="importance" id="priority">
-                        <option value="low">Niska</option>
-                        <option value="high">Visoka</option>
-                    </select>
-                    <label for="message">Vaša poruka:</label>
-                    <textarea name="message" id="message" cols="30" rows="6"></textarea>
-                    <div id="news">
-                        <label for="newsletter">Primaj newsletter:</label>
-                        <input type="checkbox" name="newsletter" id="newsletter">
-                    </div>
-                    <div class="button-grp">
-                        <button type="submit">Pošalji</button>
-                        <button type="reset" onclick="Cancel()">Odustani</button>
-                    </div>
-                </form>
-            </div>
+    <div class="contact-form">
+        <div class="form-content">
+            <h1><i class="fas fa-envelope"></i>Kontaktirajte nas</h1>
+            <form action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post">
+                <label for="name">Puno ime:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+                <label for="importance">Važnost poruke:</label>
+                <select name="importance" id="priority">
+                    <option value="low">Niska</option>
+                    <option value="high">Visoka</option>
+                </select>
+                <label for="message">Vaša poruka:</label>
+                <textarea name="message" id="message" cols="30" rows="6"></textarea>
+                <div id="news">
+                    <label for="newsletter">Primaj newsletter:</label>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                </div>
+                <div class="button-grp">
+                    <button type="submit">Pošalji</button>
+                    <button type="reset" onclick="Cancel()">Odustani</button>
+                </div>
+            </form>
         </div>
-        <script src="js/typewrittereffect.js"></script>
-        <script src="js/contact.js"></script>
+    </div>
+    <script src="js/typewrittereffect.js"></script>
+    <script src="js/contact.js"></script>
 </body>
+
 </html>

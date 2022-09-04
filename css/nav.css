@@ -1,180 +1,179 @@
-
 * {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #navigationDiv {
-    position: fixed;
-    height: 5vh;
-    width: 100vw;
-    font-size: 1.5vh;
-    z-index: 1;
-    background-color: black;
+  position: fixed;
+  height: 5vh;
+  width: 100vw;
+  font-size: 1.5vh;
+  z-index: 1;
+  background-color: black;
 }
 
 #navigation_placeholder {
-    position: relative;
-    display: flex;
-    height: 5vh;
-    align-items: center;
+  position: relative;
+  display: flex;
+  height: 5vh;
+  align-items: center;
 }
 
 #logoAlgebra {
-    height: auto;
-    width: 3vh;
-    margin: 0 1vw 0;
+  height: auto;
+  width: 3vh;
+  margin: 0 1vw 0;
 }
 
 ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 #mainNav li i {
-    margin-right: 0.5vh;
+  margin-right: 0.5vh;
 }
 
 li a {
-    text-decoration: none;
-    color: white;
-    margin: 2.5vh;
+  text-decoration: none;
+  color: white;
+  margin: 2.5vh;
 }
 
-    li a:hover {
-        color: yellow;
-    }
+li a:hover {
+  color: yellow;
+}
 
 li i {
-    color: orange;
+  color: orange;
 }
 
 #buttonDiv {
-    display: none;
-    border-bottom: 2px solid;
+  display: none;
+  border-bottom: 2px solid;
 }
 
 #secondNav {
-    position: absolute;
-    right: 1vw;
+  position: absolute;
+  right: 1vw;
 }
 
-    #secondNav li a {
-        color: rgb(214, 161, 62);
-        font-weight: bolder;
-    }
+#secondNav li a {
+  color: rgb(214, 161, 62);
+  font-weight: bolder;
+}
 
-        #secondNav li a:hover {
-            color: rgb(214, 161, 62);
-            font-weight: bolder;
-            color: yellow;
-        }
+#secondNav li a:hover {
+  color: rgb(214, 161, 62);
+  font-weight: bolder;
+  color: yellow;
+}
 
 @media only screen and (max-width: 768px) {
-    #navigationDiv {
-        height: auto;
-        flex-direction: column;
-        background-color: black;
-        padding-top: 8vh;
-    }
+  #navigationDiv {
+    height: auto;
+    flex-direction: column;
+    background-color: black;
+    padding-top: 8vh;
+  }
 
-    #navigation_placeholder {
-        height: auto;
-    }
+  #navigation_placeholder {
+    height: auto;
+  }
 
-    #mainNav {
-        height: auto;
-        flex-direction: column;
-        margin: 0;
-    }
+  #mainNav {
+    height: auto;
+    flex-direction: column;
+    margin: 0;
+  }
 
-    #logoAlgebra {
-        display: none;
-    }
+  #logoAlgebra {
+    display: none;
+  }
 
-    #mainNav li {
-        display: block;
-        width: 100vw;
-        border-top: darkorange 1px solid;
-        margin-left: 0vw;
-        font-size: 3vh;
-    }
+  #mainNav li {
+    display: block;
+    width: 100vw;
+    border-top: darkorange 1px solid;
+    margin-left: 0vw;
+    font-size: 3vh;
+  }
 
-        #mainNav li:hover {
-            background-color: darkgrey;
-        }
+  #mainNav li:hover {
+    background-color: darkgrey;
+  }
 
-    #buttonDiv {
-        width: 100vw;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        height: 8vh;
-        background-color: black;
-        position: fixed;
-        z-index: 2;
-    }
+  #buttonDiv {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 8vh;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+  }
 
-    #openToggle,
-    #closeToggle {
-        display: block;
-        height: 8vh;
-        width: 15vw;
-        font-weight: 900;
-        border: none;
-        outline: none;
-        background-color: darkorange;
-        color: white;
-        cursor: pointer;
-        font-size: 5vh;
-        position: fixed;
-        z-index: 2;
-    }
-    #secondNav {
-        display: none;
-    }
+  #openToggle,
+  #closeToggle {
+    display: block;
+    height: 8vh;
+    width: 15vw;
+    font-weight: 900;
+    border: none;
+    outline: none;
+    background-color: darkorange;
+    color: white;
+    cursor: pointer;
+    font-size: 5vh;
+    position: fixed;
+    z-index: 2;
+  }
+  #secondNav {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
-    #navigationDiv {
-        width: 100vw;
-        height: 10vh;
-        display: block;
-        position: fixed;
-        top: 0;
-    }
+  #navigationDiv {
+    width: 100vw;
+    height: 10vh;
+    display: block;
+    position: fixed;
+    top: 0;
+  }
 
-    #logoAlgebra {
-        display: none;
-    }
+  #logoAlgebra {
+    display: none;
+  }
 
-    #mainNav {
-        flex-direction: row;
-        max-width: 1200px;
-        margin: 0 auto 0;
-        height: auto;
-        position: absolute;
-    }
+  #mainNav {
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto 0;
+    height: auto;
+    position: absolute;
+  }
 
-    #navigation_placeholder {
-        flex-direction: column;
-    }
+  #navigation_placeholder {
+    flex-direction: column;
+  }
 
-    #mainNav li {
-        font-size: 1vh;
-        margin-left: 2vw;
-        margin-top: 2vh;
-        visibility: hidden;
-    }
+  #mainNav li {
+    font-size: 1vh;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    visibility: hidden;
+  }
 
-        #mainNav li a i {
-            font-size: 5vh;
-            visibility: visible;
-        }
+  #mainNav li a i {
+    font-size: 5vh;
+    visibility: visible;
+  }
 
-    #secondNav {
-        display: none;
-    }
+  #secondNav {
+    display: none;
+  }
 }

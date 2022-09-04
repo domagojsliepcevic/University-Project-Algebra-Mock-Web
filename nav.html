@@ -1,5 +1,3 @@
-
-
 <a href="index.html">
     <img id="logoAlgebra" src="img/Algebra-logo.png" alt="Algebra logo" />
 </a>
@@ -61,25 +59,24 @@
 </ul>
 
 <script>
-   
-//With a function, I am able to perform multiple tasks 
-function SwitchButtons(buttonId) {
-  var hideBtn, showBtn;
-  if (buttonId == 'openToggle') {
-    showBtn = 'closeToggle';
-    hideBtn = 'openToggle';
-  } else {
-    showBtn = 'openToggle';
-    hideBtn = 'closeToggle';
-  }
-  //step 1: toggle menu
-  document.getElementById(hideBtn).style.display = 'none'; //step 2 :additional feature hide button
-  document.getElementById(showBtn).style.display = ''; //step 3:additional feature show button
-  $("#navigationDiv").toggle("slow");
 
-}
+    //With a function, I am able to perform multiple tasks 
+    function SwitchButtons(buttonId) {
+        var hideBtn, showBtn;
+        if (buttonId == 'openToggle') {
+            showBtn = 'closeToggle';
+            hideBtn = 'openToggle';
+        } else {
+            showBtn = 'openToggle';
+            hideBtn = 'closeToggle';
+        }
+        //step 1: toggle menu
+        document.getElementById(hideBtn).style.display = 'none'; //step 2 :additional feature hide button
+        document.getElementById(showBtn).style.display = ''; //step 3:additional feature show button
+        $("#navigationDiv").toggle("slow");
+
+    }
 
 
 </script>
 <script src="js/contact.js"></script>
-
