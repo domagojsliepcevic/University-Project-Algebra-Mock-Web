@@ -1,0 +1,107 @@
+.contact-form {
+    font-family: 'Times New Roman', Times, serif;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+}
+
+.form-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+    font-size: 0.8em;
+}
+
+    .form-content form {
+        width: 100%;
+    }
+
+    .form-content h1 {
+        font-size: 2.5em;
+        font-weight: 400;
+        border-bottom: 1px solid #ccc;
+        margin-top: 0;
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+        color: black;
+    }
+
+        .form-content h1 i {
+            margin-right: 10px;
+            color: rgb(33, 182, 182);
+        }
+
+    .form-content form input,
+    .form-content form select,
+    .form-content form textarea {
+        margin-right: 20px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        width: 100%;
+        display: block;
+    }
+
+        .form-content form input:focus,
+        .form-content form select:focus,
+        .form-content form textarea:focus {
+            outline: none;
+            box-shadow: 0 0 5px #007FD1;
+            border: none;
+        }
+
+
+    .form-content form label {
+        display: inline-block;
+        padding-top: 5px;
+        margin: 10px 0 5px;
+        color: black;
+    }
+
+    .form-content form #vijesti {
+        display: inline-block;
+        width: fit-content;
+        margin: 0;
+    }
+
+    .form-content form .button-grp {
+        margin: 20px 0 0 5px;
+    }
+
+        .form-content form .button-grp button {
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+
+            .form-content form .button-grp button:nth-of-type(1) {
+                background-color: #007FD1;
+            }
+
+            .form-content form .button-grp button:nth-of-type(2) {
+                background-color: #E41F24;
+            }
+
+    .form-content form #newsletter {
+        display: inline-block;
+        width: fit-content;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .form-content form #news {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }

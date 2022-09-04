@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Natječaj</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="News article" />
+
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/newsarticle2.css" />
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/nav.css" />
+<link rel="stylesheet" href="css/rtnav.css" />
+<link rel="stylesheet" href="css/footer.css" />
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+        integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/fa15108486.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="buttonDiv">
+        <button id="openToggle" onclick="SwitchButtons('openToggle');"><i class="fa-solid fa-bars"></i></button>
+        <button id="closeToggle"onclick="SwitchButtons('closeToggle');" style='display:none;'><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="navigationDiv">
+        <nav id="navigation_placeholder"></nav>
+    </div>
+    <script src="js/nav.js"></script>
+
+
+    <div id="title">
+        <div id="titleDiv">
+            <h1>
+                Nagrađujemo izvrsnost:Objavljujemo dobitnike<br>stipendijskog natječaja šk.god.
+                2018./2019.!
+            </h1>
+        </div>
+    </div>
+    <div class="content">
+        <h2 class="title">Stipendijski natječaj za šk.god. 2018./2019.</h2>
+        <p>
+            Nakon velikog broja prijava koje smo primili, detaljnom
+            analizom i provjerom utvrdili smo dobitnike ovogodišnjeg
+            stipendijskog natječaja za maturante! Stipendiju u
+            vrijednosti od 10.000,00 kuna na potrošačkoj kartici
+            dobivaju: Heidi Sokolovski iz Zagreba - za najbolji
+            rezultat iz Matematike na A razini osvojila je
+            stipendiju u iznosu od 10.000,00 kn. Tereza Žugaj iz
+            Zagreba - za najbolji rezultat iz Matematike na B razini
+            osvojila je stipendiju u iznosu od 10.000,00 kn. Dalija
+            Romac iz Sinja - za najbolji rezultat iz Hrvatskog
+            jezika na A razini te dodatna 204 boda za rezultat iz
+            Matematike A i Engleskog jezika A osvojila je stipendiju
+            u iznosu od 10.000,00 kn. Ella Milinović iz Zagreba - za
+            najbolji rezultat iz Hrvatskog jezika na B razini
+            osvojila je stipendiju u iznosu od 10.000,00 kn. Borna
+            Skračić iz Zadra – za najbolji rezultat iz Engleskog
+            jezika na A razini osvojio je stipendiju u iznosu od
+            10.000,00 kn. Lukas Božić iz Umaga - za najbolji
+            rezultat iz Engleskog jezika na B razini osvojio je
+            stipendiju u iznosu od 10.000,00 kn.
+        </p>
+    </div>
+
+
+    <div class="contact-form">
+        <div class="form-content">
+            <h1><i class="fas fa-envelope"></i>Kontaktirajte nas</h1>
+            <form action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post">
+                <label for="name">Puno ime:</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="importance">Važnost poruke:</label>
+                <select name="importance" id="priority">
+                    <option value="low">Niska</option>
+                    <option value="high">Visoka</option>
+                </select>
+                <label for="message">Vaša poruka:</label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                <div id="news">
+                    <label for="newsletter">Primaj newsletter:</label>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                </div>
+                <div class="button-grp">
+                    <button type="submit" id="submit">Pošalji</button>
+                    <button type="reset" onclick="Cancel()">Odustani</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="footer_placeholder"></div>
+    <script src="js/footer.js"></script>
+    <script src="js/contact.js"></script>
+
+</body>
+
+</html>

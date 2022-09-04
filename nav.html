@@ -1,0 +1,85 @@
+
+
+<a href="index.html">
+    <img id="logoAlgebra" src="img/Algebra-logo.png" alt="Algebra logo" />
+</a>
+<ul id="mainNav">
+    <li>
+        <a href="index.html">
+            <i class="fa-solid fa-house-chimney"></i>
+            Početna
+        </a>
+    </li>
+    <li>
+        <a href="about.html">
+            <i class="fa-regular fa-comments"></i>
+            O nama
+        </a>
+    </li>
+    <li>
+        <a href="news.html">
+            <i class="fa-solid fa-circle-info"></i>
+            Novosti
+        </a>
+    </li>
+    <li>
+        <a href="subjects.html">
+            <i class="fa-solid fa-circle-info"></i>
+            Nastavni plan
+        </a>
+    </li>
+    <li>
+        <a href="#" id="contact" onclick="showContent()">
+            <i class="fa-regular fa-envelope"></i>
+            Kontakt forma
+        </a>
+    </li>
+</ul>
+
+<ul id="secondNav" class="slideIn">
+    <li>
+        <a href="#values" id="rightNav">
+            Naše vrijednosti
+        </a>
+    </li>
+    <li>
+        <a href="#history" id="rightNav">
+            Povijest
+        </a>
+    </li>
+    <li>
+        <a href="#algebraGroup" id="rightNav">
+            Algebra grupa
+        </a>
+    </li>
+    <li>
+        <a href="#directions" id="rightNav">
+
+            Kako do nas
+        </a>
+    </li>
+</ul>
+
+<script>
+   
+//With a function, I am able to perform multiple tasks 
+function SwitchButtons(buttonId) {
+  var hideBtn, showBtn;
+  if (buttonId == 'openToggle') {
+    showBtn = 'closeToggle';
+    hideBtn = 'openToggle';
+  } else {
+    showBtn = 'openToggle';
+    hideBtn = 'closeToggle';
+  }
+  //step 1: toggle menu
+  document.getElementById(hideBtn).style.display = 'none'; //step 2 :additional feature hide button
+  document.getElementById(showBtn).style.display = ''; //step 3:additional feature show button
+  $("#navigationDiv").toggle("slow");
+
+}
+
+
+</script>
+<script src="js/contact.js"></script>
+
